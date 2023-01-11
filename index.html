@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>SM. | Portfolio</title>
+</head>
+
+<body>
+
+<!--======= HEADER ========-->
+<header class="header">
+  <div class="container">
+    <!-- logo -->
+    <a href="#" class="logo">SM.</a>
+    <!-- navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- An empty div for Intersection Observer -->
+<div id="target"></div>
+
+<main>
+
+<!--======= HERO ========-->
+  <section class="welcome-section">
+    <div class="bg-circle circle-left"></div>
+    <div class="bg-circle circle-right"></div>
+    <div class="container">
+      <div class="welcome-section-left">
+        <h1 id="about">SHUKO MATSUURA</h1>
+        <p class="title">FRONT-END DEVELOPER & DESIGNER</p>
+        <!-- skill set icons 1 -->
+        <div class="skill-icons-set1">
+          <ul>
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3-alt"></i></li>
+            <li><i class="fa-brands fa-sass"></i></li>
+            <li><i class="fa-brands fa-square-js"></i></li>
+            <li><i class="fa-brands fa-react"></i></i></li>
+            <li><i class="fa-brands fa-node-js"></i></li>
+            <li><i class="fa-brands fa-python"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-wordpress"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="welcome-section-right">
+        <!-- introduction -->
+        <p><span class="emp">Logical, solution-focused</span> professional with extensive experience in the IT industry. Adept at leveraging <span class="emp">analytical thinking</span> with <span class="emp">attention to detail</span> to ensure the quality of products and deliverables.</p>
+        <p>A fast and keen learner with <span class="emp">inquiring mind</span>, possessing comprehensive knowledge of <span class="emp">web/software development</span> as well as <span class="emp">localisation</span>.</p>
+        <p>I am currently seeking a role as a developer/designer, which will allow me to utilize my expertise.</p>
+
+        <!-- skill set icons 2 -->
+        <div class="skill-icons-set2">
+          <ul>
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3-alt"></i></li>
+            <li><i class="fa-brands fa-sass"></i></li>
+            <li><i class="fa-brands fa-square-js"></i></li>
+            <li><i class="fa-brands fa-react"></i></i></li>
+            <li><i class="fa-brands fa-node-js"></i></li>
+            <li><i class="fa-brands fa-python"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-wordpress"></i></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- scrolling arrow -->
+      <div class="welcome-section-arrow floating-anim"><a href="#projects"><i class="fa-solid fa-circle-chevron-down"></i></a></div>
+    </div>
+  </section>
+
+<!--======= PROJECTS ========-->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <a class="project-card" href="https://smgla.github.io/Word_Basket/" target="_blank">
+        <img src="img/word-basket.png" class="thumbnail" alt="Screenshot of Word Basket">
+        <div class="project-tile">
+          <h3>Word Basket</h3>
+          <p class="tech">< React, HTML5, Sass ></p>
+          <p class="tech-description">A word collection mini-app for language learners. You can add, tick, delete words and clear all the ticked words at once. React component compiled with Babel within the index.html for easy-access to the code.</p>
+        </div>
+      </a>
+      <a class="project-card" href="https://scotlandjapaneseschool.com/portal/" target="_blank">
+        <img src="img/japanese-school.png" class="thumbnail" alt="Screenshot of The Schotland Japanese School website">
+        <div class="project-tile">
+          <h3>The Schotland Japanese School</h3>
+          <p class="tech">< WordPress ></p>
+          <p class="tech-description">Planned, designed and built a members-only portal website for a Scotland-based charity organisation.</p>
+        </div>
+      </a>
+      <a class="project-card" href="#">
+        <img src="img/concentration.png" class="thumbnail" alt="Screenshot of Wordle game">
+        <div class="project-tile">
+        <h3>Concentration</h3>
+        <p class="tech">< React, HTML, Sass ></p>
+        <p class="tech-description">A card matching mini game with time limit.</p>
+        </div>
+      </a>
+      <a class="project-card" href="https://smgla.github.io/Sushi-Shaw/" target="_blank">
+        <img src="img/sushi-shaw.png" class="thumbnail" alt="Screenshot of Sushi-shaw">
+        <div class="project-tile">
+          <h3>Sushi-Shaw</h3>
+          <p class="tech">< HTML5, CSS3 ></p>
+          <p class="tech-description">A responsive mock-up landing page of a fictional sushi takeaway shop called "Sushi-Shaw".</p>
+        </div>
+      </a>
+      <a class="project-card" href="#">
+        <img src="img/wordle.png" class="thumbnail" alt="Screenshot of Wordle game">
+        <div class="project-tile">
+            <h3>Wordle & Solver</h3>
+            <p class="tech">< Python ></p>
+            <p class="tech-description">Wordle game & solving helper application created with Python.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+<!--======= CONTACT ========-->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-left">
+        <h2>Contact</h2>
+        <p>Please get in touch!</p>
+        <!-- contact icons -->
+        <ul>
+          <li><a href="https://www.linkedin.com/in/shuko-matsuura-66a25030/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://twitter.com/SHUGMx" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://github.com/SMGLA" target="_blank" id="profile-link"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+      <div class="contact-right">
+        <!-- contact form -->
+        <form action="https://www.yougendo.com/portfolio/php/confirmation.php" method="POST">
+          <input type="text" placeholder="Name" name="name" id="name" autocomplete="off" required />
+          <label for="name" class="visuallyHidden">Name</label>
+          <input type="email" placeholder="Email" name="email" id="email" autocomplete="off" required />
+          <label for="email" class="visuallyHidden" >Email</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autocomplete="off" required ></textarea>
+          <label for="message" class="visuallyHidden">Message</label>
+          <input type="submit" name="send" value="Send Message" id="submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!--======= FOOTER ========-->
+<footer>
+  <small>Copyright © 2023  All rights reserved.</small>
+</footer>
+
+<!-- to_top icon -->
+<a href="#" id="to_top"><i class="bi bi-arrow-up-square-fill"></i></a>
+
+<script src="main.js"></script>
+</body>
+
+</html>
