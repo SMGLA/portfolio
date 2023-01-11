@@ -277,6 +277,10 @@ nav a:hover {
   color: var(--color-blue);
 }
 
+.skill-icons-set2 {
+  display: none;
+}
+
 .welcome-section .welcome-section-arrow {
   font-size: 1.4rem;
   text-align: center;
