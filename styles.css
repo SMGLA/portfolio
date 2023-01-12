@@ -590,24 +590,21 @@ footer small {
 
 @media screen and (max-width:390px) {
 
-  header  {
-    width: 90%;
-  }
 
   header .container {
+    width: 90%;
     display: flex;
-    justify-content: unset;
+    justify-content: space-between;
     height: 80px;
   }
 
-  header nav {
+  /* header nav {
     position: absolute;
     right: 16px;
-  }
+  } */
 
   .container {
     width: 90%;
-    text-align: center;
   }
 
   .welcome-section {
