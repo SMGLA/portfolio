@@ -348,11 +348,10 @@ nav a:hover {
 .project-card .thumbnail {
   background-color: var(--color-yellow);
   width: 46%;
-  height: 100%;
   border-radius: 10px;
   margin-right: 16px;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .project-card:hover {
@@ -380,7 +379,6 @@ nav a:hover {
 
 .project-card .project-tile {
   width: 50%;
-  margin-top: 10%;
   color: var(--color-dark-grey);
 }
 
