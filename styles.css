@@ -36,10 +36,20 @@ body {
   color: var(--color-mid-grey);
 }
 
+header, section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#target {
+  display: none;
+}
+
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -71,6 +81,7 @@ a {
   right: 16px;
   opacity: 0;
   transition: opacity .3s  cubic-bezier(0.86, 0, 0.07, 1);;
+  z-index: 999;
 }
 
 #to_top.scrolled {
@@ -124,7 +135,6 @@ header.fixed-hide {
 }
 
 nav ul {
-  align-items: right;
   list-style: none;
 }
 
@@ -313,7 +323,7 @@ nav a:hover {
 .projects .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 2%;
   margin-bottom: 36px;
 } 
@@ -392,7 +402,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- padding-top: 16px;
+  padding-top: 16px;
 }
 
 .contact .contact-left {
@@ -477,7 +487,7 @@ footer small {
 }
 
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:1024px) {
 
   .container {
     width: 90%;
@@ -505,12 +515,17 @@ footer small {
     }
   }
 
-  .welcome-section {
-   padding-top: 20px;
-  }
-
   .welcome-section-right {
     width: 100%;
+  }
+
+  .welcome-section-right p {
+  margin-left: 0px;
+}
+
+  .skill-icons-set2 {
+    display: block;
+    margin-left: 0;
   }
 
   .welcome-section .bg-circle {
@@ -533,6 +548,7 @@ footer small {
     text-align: center;
   }
 
+  
   .welcome-section .title {
     margin: 8px auto 32px;
     font-size: 1.6rem;
@@ -553,8 +569,8 @@ footer small {
   }
 
   .skill-icons-set2 {
-    width: min-content;
-    margin: 32px auto 0 40px;
+    width: 90%;
+    margin: 32px auto 0;
   }
 
   .welcome-section-right p {
@@ -578,18 +594,13 @@ footer small {
     margin-bottom: 36px;
   } 
 
-  .projects .container h2 {
-    margin-left: 40px;
-  }
-
   .project-card {
-    width: 80%;
+    width: 90%;
     margin: 32px auto;
   }
 }
 
-@media screen and (max-width:390px) {
-
+@media screen and (max-width:600px) {
 
   header .container {
     width: 90%;
@@ -597,11 +608,6 @@ footer small {
     justify-content: space-between;
     height: 80px;
   }
-
-  /* header nav {
-    position: absolute;
-    right: 16px;
-  } */
 
   .container {
     width: 90%;
@@ -611,8 +617,12 @@ footer small {
     padding-top: 140px;
   }
 
+  .welcome-section .container {
+  height: 40vh;
+}
+
   .welcome-section h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .welcome-section .title {
@@ -629,10 +639,6 @@ footer small {
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.1rem;
-  }
-
-  .skill-icons-set2 {
-    margin: 32px auto;
   }
 
   .projects .container h2 {
